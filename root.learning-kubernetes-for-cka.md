@@ -18,3 +18,15 @@ https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-te
 **
 
 https://killercoda.com/cka
+
+**Tips:** 
+
+http://training.linuxfoundation.org/go//Important-Tips-CKA-CKAD
+20KODE - 20% discount
+
+**Repo with various stuff:**
+
+https://github.com/kodekloudhub/certified-kubernetes-administrator-course
+
+Open Container Initiative allows to use other container vendors with k8s. It contains imagespec and runtimespec, sets of requirements for images and runtimes.
+
