@@ -5,17 +5,15 @@ desc: ''
 updated: 1717614160162
 created: 1717613529080
 ---
-Plan of learning: 
+**Plan of learning:** 
 
-**Courses:
-**
+**Courses:**
 
 Mumshad Mannambeth's course on Udemy
 
 https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/?couponCode=ST19MT60324
 
-**Labs: 
-**
+**Labs:**
 
 https://killercoda.com/cka
 
