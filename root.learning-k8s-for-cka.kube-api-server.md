@@ -1,3 +1,10 @@
+---
+id: 7qcng3gouzr8pea294ultmy
+title: Kube API Server
+desc: ''
+updated: 1719156353413
+created: 1719156353413
+---
 kube-api server
 
 is the main controlling element
