@@ -1,12 +1,16 @@
 ---
-id: mmlbf2e74a2gb6ocn8cjfga
+id: o4w1umrhbujs1gituuf67p8
 title: Learning K8s for Cka
 desc: ''
-updated: 1719156669028
-created: 1719156669028
+updated: 1719215694762
+created: 1719215673307
 ---
-Preparing for CKA certification - let's roll!
 
+[[root.learning-k8s-for-cka.oci]]
+
+[[root.learning-k8s-for-cka.etcd]]
+
+[[root.learning-k8s-for-cka.api-server]]
 
 Plan of learning:
 
