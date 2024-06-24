@@ -1,4 +1,12 @@
+---
+id: mmlbf2e74a2gb6ocn8cjfga
+title: Learning K8s for Cka
+desc: ''
+updated: 1719156669028
+created: 1719156669028
+---
 Preparing for CKA certification - let's roll!
+
 
 Plan of learning:
 
