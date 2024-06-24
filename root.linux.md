@@ -15,3 +15,5 @@ ssh-keyscan -t rsa "10.53.228.101" - generate the known_hosts key entry for the 
 
 ssh-keyscan -H 10.53.228.10 >> ~/.ssh/known_hosts  - adds the hostname/IP to the known_hosts, but only after pinging it
 ssh-keygen -R "10.53.228.10" - removes the ssh key
+
+sudo apt-get -oAcquire::Http::Proxy= install pip  - overrides proxy settings
