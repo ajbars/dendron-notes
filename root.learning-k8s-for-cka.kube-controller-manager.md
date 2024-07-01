@@ -13,4 +13,19 @@ Node-Controller is responcible for monitoring the status of the nodes and taking
 
 The replication controller. Responsible of monitoring the status of replica sets and ensuring that the desired number of Pods are available at all times within the set. If a Pod dies, it creates another one. 
 
-Those were just two expamples of controllers. 
+Those were just two expamples of controllers. There are many more others available in k8s. All consepts - deployment, services, namespaces, persistent volumes, whatever intelligence is built into these constructs, it is implemented through these various controllers. Kinda brain behind the things in k8s. 
+
+How do you see them and where are they located in your cluster? They are all packaged into a single process known as the K8s Controller Manager. When you install it, different other controllers are installed as well. 
+
+Download kube controller manager from the k8s release page 
+
+wget https://storage.googleapis.com/kubernetes-release/...
+
+Extract and run as a servive
+
+When you run it, there are a list of options provided. This is where you provide additional options to customize your controller. 
+
+
+
+
+
