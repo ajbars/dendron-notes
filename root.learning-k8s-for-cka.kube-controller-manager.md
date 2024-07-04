@@ -26,12 +26,35 @@ Extract and run as a servive
 When you run it, there are a list of options provided. This is where you provide additional options to customize your controller. You can specify which controllers to enable. If some of the controllers don't seem to exist, that's a good place to start looking for them
 
 ExecStart=/usr/local/bin/kube-controller-manager \\
+  
   --address=0.0.0.0 \\
+  
   --cluster-codr=10.200.0.0/16 \\
+  
   --cluster-name=kubernetes \\
   
+  --cluster-signing-cert-file=/var/lib/kubernetes/ca.pem \\
+  
+  --cluster-signing-key-file=/var/lib/kubernetes/ca-key.pem \\
+  
+  --kubeconfig=/var/lib/kubernetes/kube-controller-manager.kubeconfig \\
+  
+  --leader-elect=true \\
+  
+  --root-ca-file=/var/lib/kubernetes/ca.pem \\
+  
+  --service-account-private-key-file=/var/lib/kubernetes/service-account-key.pem \\
 
+  --service-cluster-ip-range=10.32.0.0./24 \\
 
+  --use-service-account-credentials=true \\
 
+  --v=2
 
+  --node-monitor-period=5s
 
+  --node-monitor-grace-period=40s
+
+  --pod-evictrion-timeout=5m0s
+
+  --controllers stringSlice Defailt[*]
