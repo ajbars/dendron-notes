@@ -23,8 +23,13 @@ wget https://storage.googleapis.com/kubernetes-release/...
 
 Extract and run as a servive
 
-When you run it, there are a list of options provided. This is where you provide additional options to customize your controller. You can specify which controllers to enable.
+When you run it, there are a list of options provided. This is where you provide additional options to customize your controller. You can specify which controllers to enable. If some of the controllers don't seem to exist, that's a good place to start looking for them
 
+ExecStart=/usr/local/bin/kube-controller-manager \\
+  --address=0.0.0.0 \\
+  --cluster-codr=10.200.0.0/16 \\
+  --cluster-name=kubernetes \\
+  
 
 
 
