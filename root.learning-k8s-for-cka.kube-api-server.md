@@ -53,8 +53,9 @@ options:
 
 --etcd-servers-https://127.0.0.1:2379 \ specify the location of the etcd servers
 
-how do you view the kube-apiserver options in an existing cluster? depend how you set up your cluster. if you set up with a lubeadmin tool, it deploys the kubeadmin-apiserver as a pod in the kube-system namespace on the master node. options can be seen in the pod definition file at etc/kubernetes/manifest folder.
+how do you view the kube-apiserver options in an existing cluster? depend how you set up your cluster. if you set up with a kubeadmin tool, it deploys the kubeadmin-apiserver as a pod in the kube-system namespace on the master node. options can be seen in the pod definition file at etc/kubernetes/manifest folder.
 
 in a non-kubeadmin setup, you can inspect the options by viewing the kube-apiserver service located at etc/systemd/system/kube-apiserver.service
 
 also, list ps -aux | grep kube-apiserver on the master node
+

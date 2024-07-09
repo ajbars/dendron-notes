@@ -57,4 +57,24 @@ ExecStart=/usr/local/bin/kube-controller-manager \\
 
   --pod-evictrion-timeout=5m0s
 
-  --controllers stringSlice Defailt[*]
+  --controllers stringSlice Default[*]
+
+  How to view the kube controller manager sever options? depends how you set your cluster. 
+
+  kubectl get pods -n kube-system  - Kubeadmin tool
+  
+  K admin tool deploys K controller manager as a pod in the kube-system namespace on the master node
+
+  options are located at 
+
+  cat /etc/kubernetes/manifests/kube-controller-manager.yaml
+
+  In a non kubeadmin setup inspect the options by viewing the kube-controller-manager service located at:
+
+  cat /etc/systemd/system/kube-controller-manager.service
+
+Also by listing the process on the master node:
+
+ps -aux | grep kube-controller-manager
+
+

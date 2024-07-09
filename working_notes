@@ -1,0 +1,8 @@
+if __name__ == "__main__":
+    set_up_rsync()
+    copy_files()
+    add_ssh_key() 
+    connect_ssh()
+
+
+    rsync -avz --progress -e "ssh -i ./vm-sdp-prod-northeu-16-core-jenkins-agent4dc740_key" /home/ictadmin/vjw_workspace zuul@10.53.228.100:home/zuul
